@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin: "http://localhost:8080",
+    origin: "https://food-usqm.onrender.com",
     credentials: true
 }
 app.use(cors(corsOptions));
