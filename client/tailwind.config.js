@@ -2,24 +2,23 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    './pages/**/*.{ts,tsx}',   // For pages folder
+    './components/**/*.{ts,tsx}',  // For components folder
+    './app/**/*.{ts,tsx}',   // For app folder
+    './src/**/*.{ts,tsx}',  // For src folder
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1400px",  // For extra-large screens
       },
     },
     extend: {
       colors: {
-        orange:"var(--button)",
-        hoverOrange:"var(--hoverButtonColor)",
+        orange: "var(--button)",
+        hoverOrange: "var(--hoverButtonColor)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -55,9 +54,9 @@ module.exports = {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "var(--radius)",   // Custom border radius
+        md: "calc(var(--radius) - 2px)",   // Adjusted border radius
+        sm: "calc(var(--radius) - 4px)",   // Adjusted border radius
       },
       keyframes: {
         "accordion-down": {
@@ -76,4 +75,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
